@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<body>
+<h2>All Feedbacks</h2>
+
+<div th:each="f : ${feedbacks}">
+    <p th:text="${f.name}"></p>
+    <p th:text="${f.message}"></p>
+</div>
+
+</body>
+</html>
